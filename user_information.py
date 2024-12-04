@@ -1,11 +1,22 @@
 print("Personal Information:")
 while True:
-    name = input("Name: ")
-    if name.isalpha():
-        continue
+
+    while True:
+        name = input("Name: ")
+        if name.isalpha():
+            break
+        else:
+            print("Error, please enter letters only.")
+        
+    
+    age = input("Age: ")
+    if not age.isdigit():
+        print("Error, please enter numbers only.")
     else:
-        print("Error, please enter letters only.")
-        break
+        continue
+    
+    
+    
 
 
 
