@@ -1,5 +1,4 @@
 print("Personal Information:")
-
 personal_info = []
 
 while True:
@@ -60,60 +59,3 @@ for persons__order, user_list in enumerate (personal_info, start=1):
     for field_name, field_value in user_list.items():
         file.write(f"{field_name}: {field_value}\n")
     file.write("\n")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Create a program that ask user for personal information. 
-#Minimum of 5 information per person, more info the better. eg. Fullname, Address, etc. 
-#Write the collected information in a txt file. It's up to you on how you'd like to format the information in the file. 
-#The program should ask user if want to input another person or exit.
-
-#print Personal Information
-
-#establish a while true loop
-    #ask user to input
-        #Name
-        #Age
-        #Contact Num.
-       # Address
-       # Zip Code 
-   # append each answer to the dict
-   # add a dict
-#ask the user if they still want to add another person
-#if Y, loop back to the while true loop
-#if N, BREAK
-
-#open a .txt file 
-#for each person in dict
-    #write each info
-
-#file handle close
