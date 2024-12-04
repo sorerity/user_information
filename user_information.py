@@ -50,10 +50,9 @@ while True:
         if retry == "Y":
             break
         elif retry == "N":
-            print("Exiting program, Goodbye.")
-            exit()
+            break
 
-
+    file = open("personal_information.txt", "w")
 
 
 
