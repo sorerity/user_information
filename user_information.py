@@ -1,5 +1,7 @@
 print("Personal Information:")
 
+personal_info = []
+
 while True:
 
     while True:
@@ -33,14 +35,6 @@ while True:
             break
         except:
             print("Error, please enter numbers only.")
-    
-    while True:
-        retry = input("Would you like to input another entry? Y/N: ")
-        if retry == "Y":
-            break
-        elif retry == "N":
-            print("Exiting program, Goodbye.")
-            exit()
 
     user_list = {
         "Name" : name,
@@ -49,6 +43,15 @@ while True:
         "Address" : address,
         "Zip Code" : zipcode,
     }
+    personal_info.append(user_list)
+
+    while True:
+        retry = input("Would you like to input another entry? Y/N: ")
+        if retry == "Y":
+            break
+        elif retry == "N":
+            print("Exiting program, Goodbye.")
+            exit()
 
 
 
