@@ -42,7 +42,13 @@ while True:
             print("Exiting program, Goodbye.")
             exit()
 
-
+    user_list = {
+        "Name" : name,
+        "Age" : age,
+        "Number" : number,
+        "Address" : address,
+        "Zip Code" : zipcode,
+    }
 
 
 
