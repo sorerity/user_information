@@ -1,4 +1,5 @@
 print("Personal Information:")
+
 while True:
 
     while True:
@@ -8,12 +9,12 @@ while True:
         else:
             print("Error, please enter letters only.")
         
-    
-    age = input("Age: ")
-    if not age.isdigit():
-        print("Error, please enter numbers only.")
-    else:
-        continue
+    while True:
+        age = input("Age: ")
+        if age.isdigit():
+            break
+        else:
+            print("Error, Age should contain numbers only.")
     
     
     
