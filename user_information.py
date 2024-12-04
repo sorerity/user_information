@@ -10,19 +10,19 @@ while True:
             print("Error, Please enter letters only.")
         
     while True:
-        age = input("Age: ")
-        if age.isdigit():
-            break
-        else:
-            print("Error, Age should contain numbers only.")
-    
-    while True:
         try:
-            number = int(input("Number: "))
+            age = int(input("Age: "))
             break
         except:
-            print("Error, Please enter numbers only.")
+            print("Error, please enter valid age.")
 
+    while True:
+        number = input("Number: ")
+        if number.isdigit() and len(number) == 11:
+            break
+        else:
+            print("Error, please input a valid number.")
+                
     while True:
         address = input("Address: ")
         break
