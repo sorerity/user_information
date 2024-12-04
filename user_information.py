@@ -53,6 +53,10 @@ while True:
             break
 
     file = open("personal_information.txt", "w")
+    for user_list in personal_info:
+        for key, value in user_list.items():
+            file.write(f"{key}: {value}\n")
+        file.write("\n")
 
 
 
