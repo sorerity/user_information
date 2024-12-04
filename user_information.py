@@ -16,7 +16,12 @@ while True:
         else:
             print("Error, Age should contain numbers only.")
     
-    
+    while True:
+        try:
+            int(input("Number: "))
+            break
+        except:
+            print("Error, Please enter numbers only.")
     
 
 
