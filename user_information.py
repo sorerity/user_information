@@ -30,9 +30,19 @@ while True:
     while True:
         try:
             zipcode = int(input("Zip Code: "))
+            break
         except:
             print("Error, please enter numbers only.")
-        
+    
+    while True:
+        retry = input("Would you like to input another entry? Y/N: ")
+        if retry == "Y":
+            break
+        elif retry == "N":
+            print("Exiting program, Goodbye.")
+            exit()
+
+
 
 
 
