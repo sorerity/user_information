@@ -51,12 +51,15 @@ while True:
             break
         elif retry == "N":
             break
+    if retry == "N":
+        break
 
-    file = open("personal_information.txt", "w")
-    for user_list in personal_info:
-        for key, value in user_list.items():
-            file.write(f"{key}: {value}\n")
-        file.write("\n")
+file = open("personal_information.txt", "w")
+for persons__order, user_list in enumerate (personal_info, start=1):
+    file.write(f"Person {persons__order}:\n")
+    for field_name, field_value in user_list.items():
+        file.write(f"{field_name}: {field_value}\n")
+    file.write("\n")
 
 
 
