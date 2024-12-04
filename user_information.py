@@ -7,7 +7,7 @@ while True:
         if name.isalpha():
             break
         else:
-            print("Error, please enter letters only.")
+            print("Error, Please enter letters only.")
         
     while True:
         age = input("Age: ")
@@ -18,12 +18,21 @@ while True:
     
     while True:
         try:
-            int(input("Number: "))
+            number = int(input("Number: "))
             break
         except:
             print("Error, Please enter numbers only.")
-    
 
+    while True:
+        address = input("Address: ")
+        break
+    
+    while True:
+        try:
+            zipcode = int(input("Zip Code: "))
+        except:
+            print("Error, please enter numbers only.")
+        
 
 
 
