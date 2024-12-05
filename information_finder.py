@@ -1,7 +1,13 @@
 with open("personal_information.txt", "r") as personal_info:
     file_lines = personal_info.readlines()
 
+search_name = input("Enter the name that you want to search: ")
 
+name_found = False
+
+for line_index, file_line in enumerate(file_lines):
+    if search_name in file_line:
+        name_found = True
 
 
 
