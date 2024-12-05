@@ -1,5 +1,5 @@
-with open("personal_information.txt", "r") as file:
-
+with open("personal_information.txt", "r") as personal_info:
+    file_lines = personal_info.readlines()
 
 
 
