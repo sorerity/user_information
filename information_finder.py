@@ -8,8 +8,14 @@ name_found = False
 for line_index, file_line in enumerate(file_lines):
     if search_name in file_line:
         name_found = True
+        print("Information Found: ")
+        
+        for line_offset in range(5):
+            print(file_lines[line_index + line_offset].strip())
+        break
 
-
+if not name_found:
+    print("Error, Name is not in the file.")
 
 
 
